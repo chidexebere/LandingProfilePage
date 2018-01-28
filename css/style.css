@@ -1,0 +1,229 @@
+
+body {
+    
+font-family: 'Helvetica', sans-serif;
+font-size: 12px;
+background: #ccccff;
+
+}
+
+
+header {
+  
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+
+/*Navigation*/
+
+    }
+
+     nav {
+  
+        margin: 0;
+        padding: 0;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: space-between;
+    
+        }
+
+    .navigation {
+        margin: 0; 
+        padding: 0 16em;
+        background: #ccccff;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: flex-end;      
+    }
+
+    .logo {
+        font: italic bold 25px Georgia, serif;
+        color: blue;
+        padding: 1em 2em 0;
+        margin-left:100px;
+      }
+
+    .navigation a {
+
+        text-decoration: none;
+        font-weight: bold; 
+        display: block;
+        padding: 4em 2em 0;
+        color: blue;
+        letter-spacing:1px;
+    }
+
+     .navigation a:hover {
+        text-decoration: white;
+    }
+
+
+/*Main*/
+main {
+    
+    height: 100%;  
+    margin: 0;  
+    padding: 0;
+    
+    }
+
+    article {
+    
+        min-height: 500px;
+        margin: 0;
+        padding: 0;
+        background: #ccccff;
+    
+    }
+
+        .flex-container {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            justify-content: center;
+            align-content:center;
+        }
+
+            .flex-item {
+  
+                background: #ccccff;
+                padding: 5px; 
+                width: 400px;  
+                height:500px; 
+                margin-top: 40px; 
+                margin-bottom: 20px; 
+                  
+               
+
+            }
+
+            .Intro {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                width: 400px;  
+                height:420px; 
+                background: #ccccff;
+                color: blue;
+               
+
+            }
+
+
+            .Intro h1 {
+                font-size : 44px;
+                font-weight: bold;
+                position: absolute;
+                line-height: 50px;
+                bottom: 130px;
+                
+
+            }
+            .Intro p{
+                font-size: 16px;
+                position: absolute;
+                line-height: 25px;
+                bottom: 10px;
+        
+            }
+
+            .pics {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                background: #ccccff;
+                
+                }
+
+            img {
+                margin-left:20px;
+                border-style: solid;
+                border-width:6px;
+                border-color: white;
+                box-shadow: 5px 20px 50px 4px #888888;
+            }
+            
+            .slogan {
+                position: absolute;
+                bottom: 20px;
+                right: 55px;
+                font-weight: bold;
+                font-size: 10px;
+                letter-spacing:2px;
+                color:white;
+                }
+
+/*horizontal line*/
+     hr {
+        position: absolute;
+        border-style: solid;
+        width:100px;
+        border-color: blue;
+        top: 65%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        z-index:1;
+     }
+
+
+    
+/*Media Queries at 1020px breakpoint*/
+@media all and (max-width: 1020px) {
+    hr {
+        display: none;
+    }
+}
+
+/*Media Queries at 800px breakpoint*/
+@media all and (max-width: 800px) {
+
+    .navigation {
+        justify-content: center;
+        padding:0;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .navigation a {
+        padding: 3em 1em 0 2em;
+    }
+}
+
+
+@media all and (max-width: 600px) {
+  
+    .flex-container {
+        -webkit-align-content: center;
+        align-content:center;
+        padding: 0;
+    }
+
+    .flex-item {
+        width: 100%;  
+        height:300px;
+    }
+     .Intro {
+        width: 100%;  
+        height:300px;          
+    }
+    
+    .Intro h1 {
+        font-size : 40px;
+    }
+}
